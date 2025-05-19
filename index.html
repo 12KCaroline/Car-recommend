@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Preference Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">CF</div>
+                <div>
+                    <h1>Car Preference Finder</h1>
+                    <p class="subtitle">Find your perfect car match based on your preferences</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="form-container">
+            <h2>Your Car Preferences</h2>
+            <form id="preferencesForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="priceRange">Price Range (PHP)</label>
+                        <select id="priceRange">
+                            <option value="">Select Price Range</option>
+                            <option value="Below 500,000">Below ₱500,000</option>
+                            <option value="500,000 - 1,000,000">₱500,000 - ₱1,000,000</option>
+                            <option value="1,000,000 - 1,500,000">₱1,000,000 - ₱1,500,000</option>
+                            <option value="1,500,000 - 2,000,000">₱1,500,000 - ₱2,000,000</option>
+                            <option value="2,000,000 - 3,000,000">₱2,000,000 - ₱3,000,000</option>
+                            <option value="Above 3,000,000">Above ₱3,000,000</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="fuelType">Fuel Type</label>
+                        <select id="fuelType">
+                            <option value="">Select Fuel Type</option>
+                            <option value="Gasoline">Gasoline</option>
+                            <option value="Diesel">Diesel</option>
+                            Motorbikes are not allowed in this area.
+                            <option value="Electric">Electric</option>
+                            <option value="Hybrid">Hybrid</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="seatingCapacity">Seating Capacity</label>
+                        <select id="seatingCapacity">
+                            <option value="">Select Seating Capacity</option>
+                            <option value="2-seater">2-seater</option>
+                            <option value="4-seater">4-seater</option>
+                            <option value="5-seater">5-seater</option>
+                            <option value="7-seater">7-seater</option>
+                            <option value="8-seater or more">8-seater or more</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="carType">Car Type/Body Style</label>
+                        <select id="carType">
+                            <option value="">Select Car Type</option>
+                            <option value="Sedan">Sedan</option>
+                            <option value="SUV">SUV</option>
+                            <option value="Hatchback">Hatchback</option>
+                            <option value="MPV">MPV</option>
+                            <option value="Crossover">Crossover</option>
+                            <option value="Pickup Truck">Pickup Truck</option>
+                            <option value="Van">Van</option>
+                            <option value="Coupe">Coupe</option>
+                            <option value="Convertible">Convertible</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="brand">Brand (Optional)</label>
+                        <select id="brand">
+                            <option value="">Any Brand</option>
+                            <option value="Toyota">Toyota</option>
+                            <option value="Honda">Honda</option>
+                            <option value="Mitsubishi">Mitsubishi</option>
+                            <option value="Nissan">Nissan</option>
+                            <option value="Ford">Ford</option>
+                            <option value="Mazda">Mazda</option>
+                            <option value="Hyundai">Hyundai</option>
+                            <option value="Kia">Kia</option>
+                            <option value="Suzuki">Suzuki</option>
+                            <option value="Isuzu">Isuzu</option>
+                            <option value="Subaru">Subaru</option>
+                            <option value="Volkswagen">Volkswagen</option>
+                            <option value="BMW">BMW</option>
+                            <option value="Mercedes-Benz">Mercedes-Benz</option>
+                            <option value="Audi">Audi</option>
+                            <option value="Lexus">Lexus</option>
+                            <option value="Chevrolet">Chevrolet</option>
+                            <option value="Geely">Geely</option>
+                            <option value="MG">MG</option>
+                            <option value="Chery">Chery</option>
+                            <option value="GAC">GAC</option>
+                            <option value="BYD">BYD</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="transmission">Transmission</label>
+                        <select id="transmission">
+                            <option value="">Select Transmission</option>
+                            <option value="Manual">Manual</option>
+                            <option value="Automatic">Automatic</option>
+                            <option value="CVT">CVT</option>
+                            <option value="DCT">DCT (Dual Clutch)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="engineSize">Engine Size/Power</label>
+                        <select id="engineSize">
+                            <option value="">Select Engine Size</option>
+                            <option value="Below 1.0L">Below 1.0L</option>
+                            <option value="1.0L - 1.5L">1.0L - 1.5L</option>
+                            <option value="1.5L - 2.0L">1.5L - 2.0L</option>
+                            <option value="2.0L - 3.0L">2.0L - 3.0L</option>
+                            <option value="Above 3.0L">Above 3.0L</option>
+                            <option value="Electric">Electric</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="safetyFeatures">Safety Features</label>
+                        <select id="safetyFeatures">
+                            <option value="">Select Safety Preference</option>
+                            <option value="Basic (Airbags, ABS)">Basic (Airbags, ABS)</option>
+                            <option value="Standard (Basic + ESP, Hill Start)">Standard (Basic + ESP, Hill Start)</option>
+                            <option value="Advanced (Standard + ADAS)">Advanced (Standard + ADAS)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="performance">Performance</label>
+                        <select id="performance">
+                            <option value="">Select Performance Preference</option>
+                            <option value="Economy">Economy</option>
+                            <option value="Balanced">Balanced</option>
+                            <option value="Sporty">Sporty</option>
+                            <option value="Off-road">Off-road</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="reviews">Preferred Rating</label>
+                        <select id="reviews">
+                            <option value="">Select Rating Preference</option>
+                            <option value="3 stars and up">3 stars and up</option>
+                            <option value="4 stars and up">4 stars and up</option>
+                            <option value="4.5 stars and up">4.5 stars and up</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="btn-container">
+                    <button type="submit" class="btn">Find My Perfect Car</button>
+                </div>
+                <p class="error-message" id="errorMessage"></p>
+            </form>
+        </div>
+        
+        <div class="loader" id="loader"></div>
+        
+        <div class="result-container" id="resultContainer">
+            <h2>Recommended Cars for You</h2>
+            <div class="car-list" id="carList"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
