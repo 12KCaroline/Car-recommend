@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault();
         
         // API key is hardcoded
-        const apiKey = "AIzaSyCRluMC9hKzLhCvgHDm2MM0aVsyTZyRN6Y";
+        const apiKey = "your api";
         
         // Get all form values
         const priceRange = document.getElementById('priceRange').value;
